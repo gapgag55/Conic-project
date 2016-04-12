@@ -1,0 +1,29 @@
+<div class="col-md-12 text-center">
+  <div class="input-group col-md-6" style="margin:40px auto;">
+    <input type="text" class="form-control" placeholder="จำนวนเงิน..." ng-model="amount">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button" data-toggle="modal" data-target="#myModal" ng-click="calculate()">คิดภาษี 7 %</button>
+    </span>
+  </div>
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">จำนวนเงินที่ต้องจ่ายคือ</h4>
+        </div>
+        <div class="modal-body" style="text-align: center; font-size: 45px;">
+          <p>{{ money }}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">เรียบร้อย</button>
+        </div>
+      </div>
+
+    </div>
+  </div>

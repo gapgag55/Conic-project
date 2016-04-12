@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "question": "x<sup>2</sup> + y<sup>2</sup> = 16 ",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 2,
+    "question": "x<sup>2</sup> + y<sup>2</sup> - 4y - 12 = 0 ",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 3,
+    "question": "x<sup>2</sup> + y<sup>2</sup> + 2x - 8 = 0 ",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 4,
+    "question": "x<sup>2</sup> + y<sup>2</sup> + 8x - 10y + 8 = 0 ",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 5,
+    "question": "x<sup>2</sup> + y<sup>2</sup> - 2x + 4y - 5 = 0 ",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 6,
+    "question": "x<sup>2</sup> + y<sup>2</sup> + 6x - 8y - 4 = 0 ",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 7,
+    "question": "4x<sup>2</sup> + 9y<sup>2</sup> - 36 = 0 ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 8,
+    "question": "4x<sup>2</sup> + 25y<sup>2</sup> - 100 = 0 ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 9,
+    "question": "y<sup>2</sup> - 36(1-x<sup>2</sup>) = 0 ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 10,
+    "question": "9x<sup>2</sup> + 25y<sup>2</sup> - 18x + 100y - 116 = 0 ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 11,
+    "question": "x<sup>2</sup> + 2y<sup>2</sup> - 2x + 4y - 13 = 0 ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 12,
+    "question": "2x<sup>2</sup> + y<sup>2</sup> + 8x + 4y + 6 = 0 ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 13,
+    "question": "x<sup>2</sup> + 8y<sup>2</sup> = 0 ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 14,
+    "question": "8x<sup>2</sup> + 12y<sup>2</sup> = 0 ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 15,
+    "question": "(y - 2)<sup>2</sup> = 16(x - 5) ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 16,
+    "question": "x<sup>2</sup> + 3y - 8x + 1 = 0 ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 17,
+    "question": "3y<sup>2</sup> - 6y - x + 5 = 0 ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 18,
+    "question": "2x<sup>2</sup> - 4x - y - 4 = 0 ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 19,
+    "question": "y<sup>2</sup> - 4y = 8x - 28 ",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 20,
+    "question": "9y<sup>2</sup> - 72y - 16x<sup>2</sup> - 32x = 16 ",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 21,
+    "question": "9y<sup>2</sup> - x<sup>2</sup> + 18 - 6x = 0 ",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 22,
+    "question": "(x - 3)<sup>2</sup> = 8(y + 2) ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 23,
+    "question": "(y - 5)<sup>2</sup> = -6x + 12 ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 24,
+    "question": "y<sup>2</sup> = 16x + 8 ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 25,
+    "question": "x<sup>2</sup> + y<sup>2</sup> + 2x - 6y + 9 = 0 ",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 26,
+    "question": "2x<sup>2</sup> + 2y<sup>2</sup> - 2x + 8y  = 0.5 ",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 27,
+    "question": "x<SUP>2</SUP> + y<sup>2</sup> + 72 = 12x ",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 28,
+    "question": "x<SUP>2</SUP> + y<sup>2</sup> – 6x - 10y + 34 = 0   ",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 29,
+    "question": "x<SUP>2</SUP> + 4y<sup>2</sup> = 16   ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 30,
+    "question": "9x<SUP>2</SUP> + 4y<sup>2</sup> = 1   ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 31,
+    "question": "4x<SUP>2</SUP> + 9y<sup>2</sup> = 36y   ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 32,
+    "question": "2x<SUP>2</SUP> + y<sup>2</sup> = 2 + 4(x – Y)   ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 33,
+    "question": "x<SUP>2</SUP> + 8y<sup>2</sup> = 0   ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 34,
+    "question": "2x – y<sup>2</sup> = 0   ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 35,
+    "question": "x - y<sup>2</sup> +4y – 2 = 0   ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 36,
+    "question": "2x<SUP>2</SUP> + 6x + 5y +10 = 0   ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 37,
+    "question": "x<SUP>2</SUP> - 2y<sup>2</sup> = 16   ",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 38,
+    "question": "x<SUP>2</SUP> - 4y<sup>2</sup> = -16   ",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 39,
+    "question": "9y<sup>2</sup> + 18y =  x<SUP>2</SUP> + 6x + 18   ",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 40,
+    "question": "y<sup>2</sup> = x<sup>2</sup> + 6y   ",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 41,
+    "question": "x<SUP>2</SUP> - y<sup>2</sup> + 144 = 0   ",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 42,
+    "question": "x<SUP>2</SUP> + 6x = 9y<sup>2</sup>   ",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 43,
+    "question": "4x<SUP>2</SUP> + y<sup>2</sup> = 8(x + y)   ",
+    "answer": "วงรี"
+  },
+  {
+    "id": 44,
+    "question": "3x<sup>2</sup> – 6(x + y) = 10   ",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 45,
+    "question": "x = y<sup>2</sup> – 16y",
+    "answer": "พาราโบลา"
+  },
+  {
+    "id": 46,
+    "question": "2x<SUP>2</SUP> + 4 = 4x + y<sup>2</sup>",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 47,
+    "question": "2x<sup>2</sup> - 12x + y<sup>2</sup> + 6y +26 = 0",
+    "answer": "วงกลม"
+  },
+  {
+    "id": 48,
+    "question": "36x<sup>2</sup> - 4y<sup>2</sup> - 36 x – 8y = 31",
+    "answer": "ไฮเปอร์โบลา"
+  },
+  {
+    "id": 49,
+    "question": "9x<SUP>2</SUP> + 8y<sup>2</sup> - 15x + 8y = -27",
+    "answer": "วงรี"
+  },
+  {
+    "id": 50,
+    "question": "x<SUP>2</SUP> + 4y<sup>2</sup> = 4x + 8",
+    "answer": "วงรี"
+  }
+]

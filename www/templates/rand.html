@@ -1,0 +1,24 @@
+<div class="text-center row question">
+  <div class="col-md-8 float-none-center">
+    <input type="text" class="form-control" placeholder="ใส่เลขบัตร.." clas="text-center" ng-model="num_card">
+    <button class="btn btn-info" ng-click="RandomQuestion()">ตกลง</button>
+    <button class="btn btn-danger" ng-click="reset()">รีเซต</button>
+  </div>
+</div>
+
+<div class="text-center row question" ng-if="question">
+  <h2 ng-bind-html="QuestTitle" style="margin-bottom: 40px"></h2>
+
+  <div class="col-md-8 float-none-center">
+    <span style="float:left; font-size:20px; margin-right: 15px;">คำตอบ: </span>
+    <select class="form-control" ng-model="answer" ng-change="AnswerUser(answer)" ng-options="item.name for item in choice"></select>
+  </div>
+
+</div>
+<div class="alert alert-dismissible alert-danger" ng-if="error">
+  <strong>#Oops</strong> ไม่มีการ์ดหมายเลขนี้
+</div>
+
+<div  ng-if="isAnswer" class="alert alert-dismissible {{ alert }}">
+  <span ng-bind-html="showText"></span> <!-- <strong>ดีใจด้วย</strong> คุณมีสิทธิ์ใช้การ์ดนี้ -->
+</div>

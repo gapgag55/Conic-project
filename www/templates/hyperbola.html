@@ -1,0 +1,141 @@
+<div class="col-md-3" style="padding:0">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#/hyperbola/#buy" aria-controls="home" role="tab" data-toggle="tab" ng-click="choice = 1">ซื้อที่ดิน</a></li>
+    <li role="presentation"><a href="#/hyperbola/#startup" aria-controls="profile" role="tab" data-toggle="tab" ng-click="choice = 2">เริ่มธุรกิจขายปลึก</a></li>
+    <li role="presentation"><a href="#/hyperbola/#factory" aria-controls="messages" role="tab" data-toggle="tab" ng-click="choice = 3">สร้างโรงงาน</a></li>
+    <li class="margin-top">
+        <button type="button" class="btn btn-danger width-full" ng-click="reset()">Reset</button>
+    </li>
+    <li class="text-center margin-top">
+      <div class="input-group">
+        <input type="text" class="form-control"  ng-model="root_number">
+        <span class="input-group-btn">
+          <button class="btn btn-default" ng-click="root(root_number)" type="button">ถอดรูท</button>
+        </span>
+      </div>
+
+        {{ showRoot }}
+    </li>
+  </ul>
+
+</div>
+
+  <!-- Tab panes -->
+  <div class="tab-content col-md-9" style="padding-right:0">
+    <div role="tabpanel" class="tab-pane active" id="buy">
+      <p class="text-center">ตัวเลขหน้าลูกเต๋าที่ทอยได้</p><br/>
+      <label style="padding:0" class="toy">
+          <input type="text" class="red col-md-4" placeholder="4" ng-model="red" ng-change="randQuestion()">
+          <input type="text" class="yellow col-md-4" placeholder="6" ng-model="yellow" ng-change="randQuestion()">
+          <input type="text" class="green col-md-4" placeholder="2" ng-model="green" ng-change="randQuestion()">
+      </label>
+
+      <div ng-if="isToy">
+          <div class="question">
+              <p class="text-center">จงแก้สมการต่อไปนี้</p>
+              <h2>x<sup>2</sup> - 2y<sup>2</sup> <span class="red">{{ operator_x }} {{ red }}</span>x <span class="yellow">{{ operator_y }} {{ yellow }}</span>y <span class="green">{{ operator_z }} {{ green }}</span> = 0</h2>
+          </div>
+          <div class="answer">
+              <h4 class="text-center">
+                  จุดศูนย์กลางวงรีคือ ( <input type="text" placeholder="4" ng-model="answerInput.h" ng-change="checkAnswer()">, <input type="text" placeholder="6" ng-model="answerInput.k" ng-change="checkAnswer()"> )
+                  <span ng-if="isAnswer">
+                      <span ng-if="!correctAnswer" class="glyphicon glyphicon-remove-sign wrong"></span>
+                      <span ng-if="correctAnswer" class="glyphicon glyphicon-ok-sign right"></span>
+                  </span>
+              </h4>
+          </div>
+
+          <h2 ng-if="!isAnswer" class="text-center" style="margin-top:40px;">เหลือเวลา: {{ time }} วินาที</h2>
+          <div ng-if="isAnswer" class="alert alert-info" role="alert" style="margin:40px 0;">
+              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              แต้มซื้อ {{ buy }}
+              แต้มขาย {{ sell }}
+          </div>
+       </div>
+       <div ng-if="!isToy" class="text-center">
+           ใส่ตัวเลขให้ครบช่อง
+       </div>
+    </div>
+
+    <!---------------------------  ธุรกิจขายปลีก ------------------------------------>
+
+    <div role="tabpanel" class="tab-pane" id="startup">
+      <p class="text-center">ตัวเลขหน้าลูกเต๋าที่ทอยได้</p><br/>
+      <label style="padding:0" class="toy">
+          <input type="text" class="red col-md-4" placeholder="4" ng-model="red" ng-change="randQuestion()">
+          <input type="text" class="yellow col-md-4" placeholder="6" ng-model="yellow" ng-change="randQuestion()">
+          <input type="text" class="green col-md-4" placeholder="2" ng-model="green" ng-change="randQuestion()">
+      </label>
+
+      <div ng-if="isToy">
+          <div class="question">
+              <p class="text-center">จงแก้สมการต่อไปนี้</p>
+              <h2><span class="red">{{ red }}</span>x<sup>2</sup> - <span class="yellow">{{ yellow }}</span>y<sup>2</sup>  <span class="green">{{ operator_z }} {{ green }}</span> = 0</h2>
+          </div>
+          <div class="answer">
+            <h4 class="text-center">
+              ค่า a คือ <input type="text" placeholder="4" ng-model="answerInput.x" ng-change="checkAnswer()">
+              <span ng-if="isAnswer_a">
+                <span ng-if="!correctAnswer_a" class="glyphicon glyphicon-remove-sign wrong"></span>
+                <span ng-if="correctAnswer_a" class="glyphicon glyphicon-ok-sign right"></span>
+              </span>
+
+              ค่า b คือ <input type="text" placeholder="6" ng-model="answerInput.y" ng-change="checkAnswer()">
+              <span ng-if="isAnswer_b">
+                <span ng-if="!correctAnswer_b" class="glyphicon glyphicon-remove-sign wrong"></span>
+                <span ng-if="correctAnswer_b" class="glyphicon glyphicon-ok-sign right"></span>
+              </span>
+            </h4>
+          </div>
+
+          <h2 ng-if="!isAnswer" class="text-center" style="margin-top:40px;">เหลือเวลา: {{ time }} วินาที</h2>
+          <div ng-if="isAnswer" class="alert alert-info" role="alert" style="margin:40px 0;">
+              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              <span ng-if="!correctAnswer">{{ showText.wrongBussiness }}</span>
+              <span ng-if="correctAnswer">{{ showText.rightBussiness }}</span>
+          </div>
+       </div>
+       <div ng-if="!isToy" class="text-center">
+           ใส่ตัวเลขให้ครบช่อง
+       </div>
+    </div>
+
+    <!-----------------------------  สร้างโรงงาน ---------------------->
+
+    <div role="tabpanel" class="tab-pane" id="factory">
+      <p class="text-center">ตัวเลขหน้าลูกเต๋าที่ทอยได้</p><br/>
+      <label style="padding:0" class="toy">
+          <input type="text" class="red col-md-4" placeholder="4" ng-model="red" ng-change="randQuestion()">
+          <input type="text" class="yellow col-md-4" placeholder="6" ng-model="yellow" ng-change="randQuestion()">
+          <input type="text" class="green col-md-4" placeholder="2" ng-model="green" ng-change="randQuestion()">
+      </label>
+
+      <div ng-if="isToy">
+          <div class="question">
+              <p class="text-center">จงแก้สมการต่อไปนี้</p>
+              <h2><span class="red">{{ red }}</span>x<sup>2</sup> - <span class="yellow">{{ yellow }}</span>y<sup>2</sup> <span class="green">- {{ green }}</span> = 0</h2>
+          </div>
+          <div class="answer">
+            <h4 class="text-center">
+                ค่า C คือ <input type="text" placeholder="4" ng-model="answerInput.z" ng-change="checkAnswer()">
+                <span ng-if="isAnswer">
+                  <span ng-if="!correctAnswer" class="glyphicon glyphicon-remove-sign wrong"></span>
+                  <span ng-if="correctAnswer" class="glyphicon glyphicon-ok-sign right"></span>
+                </span>
+            </h4>
+          </div>
+
+          <h2 ng-if="!isAnswer" class="text-center" style="margin-top:40px;">เหลือเวลา: {{ time }} วินาที</h2>
+          <div ng-if="isAnswer" class="alert alert-info" role="alert" style="margin:40px 0;">
+              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              <span ng-if="!correctAnswer">{{ showText.wrongFactory }}</span>
+              <span ng-if="correctAnswer">{{ showText.rightFactory }}</span>
+          </div>
+       </div>
+       <div ng-if="!isToy" class="text-center">
+           ใส่ตัวเลขให้ครบช่อง
+       </div>
+    </div>
+  </div>
